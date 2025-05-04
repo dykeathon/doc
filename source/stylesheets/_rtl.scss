@@ -69,8 +69,10 @@ $default: auto;
         margin-#{right}: $default !important;
     }
     &>ul,
+    &>li,
     &>ol {
         padding-#{right}: $main-padding + 15px;
+        padding-#{left}: $main-padding + 15px;
     }
     table {
         th,
@@ -106,6 +108,7 @@ h4,
 h5,
 h6,
 p,
+li,
 aside {
     text-align: right;
     direction: rtl;
@@ -117,6 +120,11 @@ aside {
     font-weight: 100 !important;
 }
 
+ul,
+li,
+ol {
+    margin-#{right}: $main-padding + 15px;
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
